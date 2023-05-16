@@ -1,0 +1,33 @@
+@font-face {
+  font-family: mifuente;
+  src: url(mifuente.otf);
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background:rgb(240,240,240);
+    color:rgb(30,30,30);
+}
+h1{
+    font-family:mifuente;
+    font-size:40px;
+    padding-left:10px;
+    width:45%;
+    float:left;
+}
+nav{
+    width:45%;
+    float:right;
+}
+nav ul{
+    list-style-type:none;
+}
+nav ul li{
+    float:right;
+}
+nav ul li img{
+    width:32px;
+    margin:10px;
+}

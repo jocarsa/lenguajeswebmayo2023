@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo Javascript</title>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        <input type="text" id="entrada">
+        <button id="boton">Pulsame</button>
+        <article id="resultado"></article>
+        <script>
+            document.getElementById("boton").onclick = function(){
+                document.getElementById("resultado").innerHTML = document.getElementById("entrada").value
+            }
+        </script>
+    </body>
+</html>

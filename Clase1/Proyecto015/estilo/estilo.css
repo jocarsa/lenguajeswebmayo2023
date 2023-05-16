@@ -1,0 +1,18 @@
+@font-face {
+  font-family: mifuente;
+  src: url(mifuente.otf);
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background:rgb(240,240,240);
+    color:rgb(30,30,30);
+}
+h1{
+    font-family:mifuente;
+    font-size:40px;
+    padding-left:10px;
+    width:50%;
+}
