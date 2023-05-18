@@ -1,0 +1,1 @@
+console.log("esto se ejecuta en el inicio")
