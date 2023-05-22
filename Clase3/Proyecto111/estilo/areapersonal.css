@@ -1,0 +1,14 @@
+#misdatos{
+    font-family: sans-serif;
+}
+#misdatos h2,#misdatos h2, #misdatos p{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#misdatos table{
+    width:100%;
+}
+#misdatos table img{
+    width:20px;
+    float:right;
+}

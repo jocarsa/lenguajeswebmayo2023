@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Canvas</title>
+        <meta charset="utf-8">
+        <style>
+            body{background:rgb(220,220,220);}
+            canvas{border:1px solid black;}
+        </style>
+    </head>
+    <body>
+        <canvas id="logo" width=512px height=512px></canvas>
+        <script>
+            var contexto = document.getElementById("logo").getContext("2d")
+            // Círculo exterior, línea y relleno
+            
+            contexto.strokeStyle = "black"
+            contexto.fillStyle = "white"
+            contexto.lineWidth = 25
+            contexto.beginPath();
+            contexto.arc(256,256,220,0,Math.PI*2)
+            contexto.stroke();
+            contexto.fill();
+            // Círculo interior, relleno
+            contexto.fillStyle = "black"
+            contexto.beginPath();
+            contexto.arc(256,256,10,0,Math.PI*2)
+            contexto.fill();
+            // Círculo medio, trazo
+            contexto.lineWidth = 3
+            contexto.fillStyle = "black"
+            contexto.beginPath();
+            contexto.arc(256,256,50,0,Math.PI*2)
+            contexto.stroke();
+            centrox = 256
+            centroy = 256
+            for(var i = 0;i<10;i++){
+                // Dibujo una gota
+                contexto.beginPath();
+                contexto.moveTo(centrox,centroy)
+                contexto.lineTo(
+                    centrox+Math.cos(-1)*60,
+                    centrox+Math.sin(-1)*60
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(-0.5)*120,
+                    centrox+Math.sin(-0.5)*120
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(-0.2)*180,
+                    centrox+Math.sin(-0.2)*180
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(0)*220,
+                    centrox+Math.sin(0)*220
+                )
+                contexto.stroke();
+                
+            }
+            
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+

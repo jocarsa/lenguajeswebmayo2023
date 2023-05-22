@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Canvas</title>
+        <meta charset="utf-8">
+        <style>
+            canvas{border:1px solid black;}
+        </style>
+    </head>
+    <body>
+        <canvas id="lienzo" width=512px height=512px></canvas>
+        <script>
+            var contexto = document.getElementById("lienzo").getContext("2d")
+            contexto.fillStyle = "red"
+            contexto.beginPath();
+            contexto.arc(200,200,40,0,Math.PI*2);
+            contexto.fill();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Canvas</title>
+        <meta charset="utf-8">
+        <style>
+            body{background:rgb(220,220,220);}
+            canvas{border:1px solid black;}
+        </style>
+    </head>
+    <body>
+        <canvas id="logo" width=512px height=512px></canvas>
+        <script>
+            var contexto = document.getElementById("logo").getContext("2d")
+            // Círculo exterior, línea y relleno
+            
+            contexto.strokeStyle = "black"
+            contexto.fillStyle = "white"
+            contexto.lineWidth = 25
+            contexto.beginPath();
+            contexto.arc(256,256,220,0,Math.PI*2)
+            contexto.stroke();
+            contexto.fill();
+            // Círculo interior, relleno
+            contexto.fillStyle = "black"
+            contexto.beginPath();
+            contexto.arc(256,256,10,0,Math.PI*2)
+            contexto.fill();
+            
+            centrox = 256
+            centroy = 256
+            var numeroiteraciones = 15;
+            var incrementoangulo = Math.PI*2/numeroiteraciones
+            contexto.lineWidth = 5
+            for(var i = 0;i<10;i+=incrementoangulo){
+                contexto.strokeStyle = "rgb("+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+")"
+                // Dibujo una gota
+                contexto.beginPath();
+                contexto.moveTo(centrox,centroy)
+                contexto.lineTo(
+                    centrox+Math.cos(-1+i)*60,
+                    centrox+Math.sin(-1+i)*60
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(-0.5+i)*120,
+                    centrox+Math.sin(-0.5+i)*120
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(-0.2+i)*180,
+                    centrox+Math.sin(-0.2+i)*180
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(0+i)*220,
+                    centrox+Math.sin(0+i)*220
+                )
+                contexto.stroke();
+                // Dibujo una gota
+                contexto.beginPath();
+                contexto.moveTo(centrox,centroy)
+                contexto.lineTo(
+                    centrox+Math.cos(1+i)*60,
+                    centrox+Math.sin(1+i)*60
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(0.5+i)*120,
+                    centrox+Math.sin(0.5+i)*120
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(0.2+i)*180,
+                    centrox+Math.sin(0.2+i)*180
+                )
+                contexto.lineTo(
+                    centrox+Math.cos(0+i)*220,
+                    centrox+Math.sin(0+i)*220
+                )
+                contexto.stroke();
+            }
+            // Círculo medio, trazo
+            contexto.lineWidth = 3
+            contexto.fillStyle = "black"
+            contexto.beginPath();
+            contexto.arc(256,256,60,0,Math.PI*2)
+            contexto.stroke();
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+

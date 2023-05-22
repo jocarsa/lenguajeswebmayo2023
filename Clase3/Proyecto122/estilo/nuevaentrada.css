@@ -1,0 +1,13 @@
+#nuevaentrada{
+    font-family: sans-serif;
+    padding:20px;
+    
+}
+#nuevaentrada input,#nuevaentrada textarea,#nuevaentrada button{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#nuevaentrada textarea{
+    height:300px;
+}
