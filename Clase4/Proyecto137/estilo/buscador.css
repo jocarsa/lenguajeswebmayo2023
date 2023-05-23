@@ -1,0 +1,36 @@
+#buscador{
+    width:80%;
+    float:left;
+    margin:10px;
+    margin-right:0px;
+    box-sizing: border-box;
+    padding-top:10px;
+    padding-bottom:10px;
+    border:none;
+    border-radius:20px 0px 0px 20px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.2) inset;
+    padding-left:30px;
+    background-image:url(../imagenes/iconobuscar.svg);
+    background-repeat: no-repeat;
+    background-size:20px 20px;
+    background-position:7px 7px;
+    padding-right:0px;
+}
+#iniciabusqueda{
+    float:left;
+    width:10%;
+    border:none;
+    background:white;
+    padding:0px;
+    margin:10px;
+    margin-left:0px;
+    border-radius:0px 20px 20px 0px;
+}
+#iniciabusqueda img{
+    
+    width:30px;
+}
+.imgbusqueda{
+    width:33%;
+    display:inline-block;
+}

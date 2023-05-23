@@ -1,0 +1,13 @@
+#formmensajenuevo{
+    font-family: sans-serif;
+    padding:20px;
+    
+}
+#formmensajenuevo input,#formmensajenuevo textarea,#formmensajenuevo button{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#formmensajenuevo textarea{
+    height:300px;
+}

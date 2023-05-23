@@ -1,0 +1,1 @@
+CREATE TABLE `ideaoniric`.`comentarios` (`Identitificador` INT(255) NOT NULL AUTO_INCREMENT , `remitente` VARCHAR(255) NOT NULL , `fecha` VARCHAR(255) NOT NULL , `identrada` VARCHAR(255) NOT NULL , `mensaje` VARCHAR(255) NOT NULL , PRIMARY KEY (`Identitificador`)) ENGINE = InnoDB;
