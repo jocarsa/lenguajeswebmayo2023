@@ -1,0 +1,26 @@
+#nuevaentrada{
+    font-family: sans-serif;
+    padding:20px;
+    
+}
+#nuevaentrada input,#nuevaentrada textarea,#nuevaentrada button{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#nuevaentrada textarea{
+    height:300px;
+}
+#areaarchivonuevo{
+    width:70%;
+    height:30%;
+    border:1px solid grey;
+    padding:20px;
+    margin:20px;
+    border-radius:20px;
+    display:block;
+    box-sizing: border-box;
+    margin:auto;
+    text-align:center;
+}
+#areaarchivonuevo img{width:50%;}

@@ -1,0 +1,159 @@
+body,html{
+    width:100%;
+    height:100%;
+    padding:0px;
+    margin:0px;
+    font-family:sans-serif;
+}
+header{
+    background:#22262c;
+    color:#9fa3a9;
+    padding:10px;
+}
+#logo{
+    width:15px;
+    display:inline-block;
+}
+h1{
+    font-size:16px;
+    display:inline-block;
+    padding:0px;
+    margin:0px;
+}
+nav{
+    width:20%;
+    height:100%;
+    background:#22262c;
+    color:#9fa3a9;
+    float:left;
+    box-sizing: border-box;
+    padding:10px;
+}
+section{
+    width:80%;
+    height:100%;
+    background:#efefef;
+    color:rgb(50,50,50);
+    float:right;
+    box-sizing: border-box;
+    padding:10px;
+}
+.caja{
+    width:100%;
+    height:85%;
+    background:white;
+    padding:10px;
+    box-sizing: border-box;
+    border:1px solid rgb(200,200,200);
+    border-radius:4px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.2);
+    overflow-y:scroll;
+}
+nav ul{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+table{
+    width:100%;
+}
+table thead tr th{
+    text-align:left;
+}
+table tbody tr:nth-child(odd){
+    background:rgb(240,240,240);
+    
+}
+table tbody tr td{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+body,html{
+    overflow:hidden;
+}
+h2{
+    padding:0px;
+    margin:0px;
+    display:inline-block;
+    margin:5px;
+}
+.caja{
+    margin-top:10px;
+}
+#botonnuevo,.botoneditar,.botoneliminar{
+    background:#22262c;
+    color:#9fa3a9;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+}
+.botoneditar{
+    color:yellow;
+}
+.botoneliminar{
+    color:red;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#9fa3a9;
+   
+}
+nav ul li{
+     padding-top:5px;
+    padding-bottom:5px;
+}
+.icono{
+    background:#9fa3a9;
+    color:#22262c;
+    padding:4px;
+    width:20px;
+    height:20px;
+    display:inline-block;
+    border-radius:5px;
+    text-align:center;
+    line-height:20px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+section form{
+    columns:2;
+    
+    
+}
+section form input{
+    width:100%;
+    padding-top:10px;
+    margin-top:0px;
+    margin-bottom:10px;
+}
+section form p{
+    padding:0px;
+    margin:0px;
+    font-size:8px;
+    background:#22262c;
+    color:#9fa3a9;
+    border-radius:5px 5px 0px 0px;
+    padding:1px;
+    max-width:50%;
+    padding-left:10px;
+}
+.controlformulario{
+    break-inside: avoid-column;
+}
+table{
+    display: block;
+    max-width:100%;
+    table-layout: fixed;
+}
+header a{
+    color:inherit;
+}
+.grafica{
+    width:45%;
+    box-sizing: border-box;
+    padding:20px;
+    float:left;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.3);
+    border-radius:5px;
+    margin:10px;
+}
